@@ -46,5 +46,21 @@ public class TigaLoop {
         }
         System.out.println("i <  n berputar : " + kurang + " kali");
         System.out.println("i <= n berputar : " + kurangSama + " kali");
+
+        // Saring deret 1-10: lewati genap (continue), berhenti kalau i > 7 (break)
+        int tercetak = 0;
+        System.out.print("Disaring :");
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
+            if (i > 7) {
+                break;
+            }
+            System.out.print(" " + i);
+            tercetak++;
+        }
+        System.out.println();
+        System.out.println("Sampai println  : " + tercetak + " kali");
     }
 }
