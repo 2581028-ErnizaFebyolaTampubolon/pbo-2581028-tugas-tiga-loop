@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class TigaLoop {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Batas deret (n) : ");
+        int n = in.nextInt();
+
+        System.out.println();
+        System.out.println("===== SATU DERET, TIGA LOOP =====");
+
+        // Versi for (pencacah: a)
+        System.out.print("for      :");
+        for (int a = 1; a <= n; a++) {
+            System.out.print(" " + a);
+        }
+        System.out.println();
+
+        // Versi while (pencacah: b)
+        System.out.print("while    :");
+        int b = 1;
+        while (b <= n) {
+            System.out.print(" " + b);
+            b++;
+        }
+        System.out.println();
+
+        // Versi do-while (pencacah: c)
+        System.out.print("do-while :");
+        int c = 1;
+        do {
+            System.out.print(" " + c);
+            c++;
+        } while (c <= n);
+        System.out.println();
+
+    }
+}
